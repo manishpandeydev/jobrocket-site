@@ -82,7 +82,7 @@ h1 {
   letter-spacing: -2px;
 }
 
-.green {color: var(--text);
+.greenTxt {color: white;
        background:var(--green);}
 
 .subhead {
