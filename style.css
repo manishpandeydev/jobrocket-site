@@ -1,0 +1,250 @@
+:root {
+  --bg: #0A0A0A;
+  --card: #171717;
+  --border: #262626;
+  --text: #FAFAFA;
+  --muted: #A1A1AA;
+  --green: #22c55e;
+  --green-hover: #16a34a;
+}
+
+* {margin: 0; padding: 0; box-sizing: border-box;}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+nav {
+  border-bottom: 1px solid var(--border);
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  background: rgba(10,10,10,0.8);
+  backdrop-filter: blur(12px);
+  z-index: 100;
+}
+
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+
+.btn-nav {
+  background: var(--card);
+  color: var(--text);
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  border: 1px solid var(--border);
+}
+
+.hero {
+  padding: 100px 0 60px 0;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3.5rem;
+  font-weight: 900;
+  line-height: 1.1;
+  margin-bottom: 24px;
+}
+
+.green {color: var(--green);}
+
+.subhead {
+  font-size: 1.25rem;
+  color: var(--muted);
+  max-width: 600px;
+  margin: 0 auto 40px auto;
+}
+
+.btn-primary {
+  background: var(--green);
+  color: #000;
+  padding: 18px 36px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.1rem;
+  display: inline-block;
+  transition: 0.2s;
+}
+
+.btn-primary:hover {
+  background: var(--green-hover);
+  transform: translateY(-2px);
+}
+
+.btn-primary.full {width: 100%; text-align: center;}
+
+.trust {
+  margin-top: 16px;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.dashboard {
+  width: 100%;
+  max-width: 900px;
+  margin-top: 60px;
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  box-shadow: 0 25px 50px -12px rgba(0,0,0,0.5);
+}
+
+.logos {
+  padding: 60px 0;
+  text-align: center;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.logos p {
+  color: var(--muted);
+  margin-bottom: 24px;
+  font-weight: 600;
+}
+
+.logo-row {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+  flex-wrap: wrap;
+  opacity: 0.6;
+}
+
+.logo-row img {height: 32px; filter: grayscale(1) brightness(2);}
+
+section {padding: 100px 0;}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 32px;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 32px;
+}
+
+.step {
+  width: 48px;
+  height: 48px;
+  background: var(--green);
+  color: #000;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+h3 {font-size: 1.5rem; margin-bottom: 12px;}
+.card p {color: var(--muted);}
+
+#pricing {background: #000;}
+.price-card {
+  background: var(--card);
+  border: 2px solid var(--green);
+  border-radius: 20px;
+  padding: 48px;
+  max-width: 450px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.price {
+  font-size: 4rem;
+  font-weight: 900;
+  margin: 20px 0;
+}
+
+.price span {
+  font-size: 1.5rem;
+  color: var(--muted);
+  font-weight: 400;
+}
+
+.price-card ul {
+  list-style: none;
+  text-align: left;
+  margin: 32px 0;
+}
+
+.price-card li {
+  padding: 8px 0;
+  color: var(--muted);
+}
+
+.guarantee {
+  margin-top: 16px;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.author {
+  margin-top: 16px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.faq-item {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 16px;
+}
+
+.faq-item h4 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+.faq-item p {color: var(--muted);}
+
+footer {
+  border-top: 1px solid var(--border);
+  padding: 40px 0;
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+footer a {color: var(--green);}
+
+@media (max-width: 768px) {
+  h1 {font-size: 2.5rem;}
+  .hero {padding: 60px 0;}
+  section {padding: 60px 0;}
+}
+
