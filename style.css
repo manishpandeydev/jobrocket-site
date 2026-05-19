@@ -72,7 +72,7 @@ h1 {
   margin-bottom: 24px;
 }
 
-.green {color: var(--green);}
+.green {background: var(--green);}
 
 .subhead {
   font-size: 1.25rem;
