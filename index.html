@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>JobRocket - We Apply To 100+ Jobs/Month For You</title>
   <meta name="description" content="Upload your resume once. Our US team applies to 100+ direct career page jobs/month. $49/mo.">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=3">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>">
 </head>
@@ -18,46 +18,52 @@
   </nav>
 
   <section class="hero">
-    <div class="container">
-      <h1>Upload Your Resume Once.<br>We Apply To <span class="green">100+ Jobs/Month</span> For You.</h1>
-      <p class="subhead">Real humans apply direct to company career pages. No LinkedIn spam. No bots. You just show up to interviews.</p>
-      <a href="YOUR_STRIPE_LINK" class="btn-primary">Get 10 Free Applications →</a>
-      <p class="trust">Cancel anytime. US-based team. Used by 200+ laid-off engineers.</p>
-      
-      <div class="dashboard-mock">
-        <div class="mock-header">
-          <div class="dot red"></div><div class="dot yellow"></div><div class="dot green"></div>
-          <span>JobRocket Dashboard - Live Applications</span>
-        </div>
-        <div class="mock-table">
-          <div class="row head"><span>Company</span><span>Role</span><span>Date Applied</span><span>Status</span></div>
-          <div class="row"><span>Google</span><span>Senior PM</span><span>Aug 15</span><span class="status">Applied</span></div>
-          <div class="row"><span>Stripe</span><span>Product Lead</span><span>Aug 15</span><span class="status">Applied</span></div>
-          <div class="row"><span>Notion</span><span>Group PM</span><span>Aug 14</span><span class="status interview">Interview</span></div>
-          <div class="row"><span>Ramp</span><span>Sr PM Growth</span><span>Aug 14</span><span class="status">Applied</span></div>
-          <div class="row"><span>OpenAI</span><span>PM, Safety</span><span>Aug 13</span><span class="status">Applied</span></div>
+    <div class="container hero-grid">
+      <div class="hero-left">
+        <h1>Upload Your Resume Once.<br>We Apply To <span class="green">100+ Jobs/Month</span> For You.</h1>
+        <p class="subhead">Real humans apply direct to company career pages. No LinkedIn spam. No bots. You just show up to interviews.</p>
+        <div class="hero-cta">
+          <a href="YOUR_STRIPE_LINK" class="btn-primary">Get 10 Free Applications →</a>
+          <p class="trust">Cancel anytime. US-based team. Used by 200+ laid-off engineers.</p>
         </div>
       </div>
-
+      <div class="hero-right">
+        <div class="dashboard-mock">
+          <div class="mock-header">
+            <div class="dot red"></div><div class="dot yellow"></div><div class="dot green"></div>
+            <span>Live Client Dashboard</span>
+          </div>
+          <div class="mock-table">
+            <div class="row head"><span>Company</span><span>Role</span><span>Date</span><span>Status</span></div>
+            <div class="row"><span>Google</span><span>Senior PM</span><span>Aug 15</span><span class="status">Applied</span></div>
+            <div class="row"><span>Stripe</span><span>Product Lead</span><span>Aug 15</span><span class="status">Applied</span></div>
+            <div class="row"><span>Notion</span><span>Group PM</span><span>Aug 14</span><span class="status interview">Interview</span></div>
+            <div class="row"><span>Ramp</span><span>Sr PM Growth</span><span>Aug 14</span><span class="status">Applied</span></div>
+            <div class="row"><span>OpenAI</span><span>PM, Safety</span><span>Aug 13</span><span class="status">Applied</span></div>
+            <div class="row"><span>Anthropic</span><span>Product</span><span>Aug 13</span><span class="status">Applied</span></div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
   <section class="logos">
     <div class="container">
-      <p>We apply direct to:</p>
+      <p>We apply direct to 200+ company career pages including:</p>
       <div class="logo-row">
-        <img src="https://logo.clearbit.com/greenhouse.io" alt="Greenhouse">
-        <img src="https://logo.clearbit.com/lever.co" alt="Lever">
-        <img src="https://logo.clearbit.com/workday.com" alt="Workday">
-        <img src="https://logo.clearbit.com/bamboohr.com" alt="BambooHR">
-        <img src="https://logo.clearbit.com/ashbyhq.com" alt="Ashby">
+        <span>Greenhouse</span>
+        <span>Lever</span>
+        <span>Workday</span>
+        <span>BambooHR</span>
+        <span>Ashby</span>
+        <span>SmartRecruiters</span>
       </div>
     </div>
   </section>
 
   <section id="how">
     <div class="container">
-      <h2>How It Works</h2>
+      <h2>Stop applying. Start interviewing.</h2>
       <div class="grid-3">
         <div class="card">
           <div class="step">1</div>
@@ -67,7 +73,7 @@
         <div class="card">
           <div class="step">2</div>
           <h3>We Hunt Daily</h3>
-          <p>Our team finds 5+ new jobs/day. Tailors your resume + writes cover letter for each app.</p>
+          <p>Our US team finds 5+ new jobs/day. Tailors your resume + writes cover letter for each app.</p>
         </div>
         <div class="card">
           <div class="step">3</div>
@@ -80,12 +86,12 @@
 
   <section id="pricing">
     <div class="container">
-      <h2>Simple Pricing</h2>
+      <h2>One plan. Unlimited upside.</h2>
       <div class="price-card">
         <h3>JobRocket Human Plan</h3>
         <div class="price">$49<span>/mo</span></div>
         <ul>
-          <li>✓ 100+ applications/month</li>
+          <li>✓ 100+ applications/month guaranteed</li>
           <li>✓ Custom cover letters per job</li>
           <li>✓ Weekly progress report</li>
           <li>✓ Direct career page apps only</li>
@@ -93,14 +99,14 @@
           <li>✓ Cancel anytime</li>
         </ul>
         <a href="YOUR_STRIPE_LINK" class="btn-primary full">Start With 10 Free Apps</a>
-        <p class="guarantee">100+ apps guaranteed or your money back</p>
+        <p class="guarantee">First 10 applications free. No card required to start.</p>
       </div>
     </div>
   </section>
 
   <section class="testimonials">
     <div class="container">
-      <h2>Wall of Wins</h2>
+      <h2>Don’t take our word for it</h2>
       <div class="grid-3">
         <div class="card">
           <p>"Laid off from Meta. Your team applied to 147 jobs. I did 3 interviews last week. Worth every penny."</p>
@@ -121,22 +127,32 @@
   <section class="faq">
     <div class="container">
       <h2>FAQ</h2>
-      <div class="faq-item">
-        <h4>Is this legal?</h4>
-        <p>Yes. You’re hiring us as your job search assistant. We apply with your permission. Same as hiring a VA on Upwork.</p>
+      <div class="faq-grid">
+        <div class="faq-item">
+          <h4>Is this legal?</h4>
+          <p>Yes. You’re hiring us as your job search assistant. We apply with your permission. Same as hiring a VA on Upwork.</p>
+        </div>
+        <div class="faq-item">
+          <h4>When do you start?</h4>
+          <p>Within 2 hours of payment. You’ll get intro email from your dedicated VA same day with dashboard link.</p>
+        </div>
+        <div class="faq-item">
+          <h4>Do you use bots?</h4>
+          <p>No. 100% human team. That’s why we don’t get banned by Workday or Greenhouse. Higher success rate.</p>
+        </div>
+        <div class="faq-item">
+          <h4>What if I get zero interviews?</h4>
+          <p>We guarantee 100+ applications/mo. Avg client sees 3-8 interview requests in 30 days. If we do <100 apps, full refund.</p>
+        </div>
       </div>
-      <div class="faq-item">
-        <h4>When do you start?</h4>
-        <p>Within 2 hours of payment. You’ll get intro email from your dedicated VA same day with dashboard link.</p>
-      </div>
-      <div class="faq-item">
-        <h4>Do you use bots?</h4>
-        <p>No. 100% human team. That’s why we don’t get banned by Workday or Greenhouse. Higher success rate.</p>
-      </div>
-      <div class="faq-item">
-        <h4>What if I get zero interviews?</h4>
-        <p>We guarantee 100+ applications/mo. Avg client sees 3-8 interview requests in 30 days. If we do <100 apps, full refund.</p>
-      </div>
+    </div>
+  </section>
+
+  <section class="cta-final">
+    <div class="container">
+      <h2>Ready to stop applying?</h2>
+      <a href="YOUR_STRIPE_LINK" class="btn-primary">Get 10 Free Applications →</a>
+      <p class="trust">Join 200+ engineers who automated job hunting</p>
     </div>
   </section>
 
