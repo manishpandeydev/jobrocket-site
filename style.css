@@ -82,7 +82,8 @@ h1 {
   letter-spacing: -2px;
 }
 
-.green {color: black;}
+.green {color: var(--text);
+       background:var(--green);}
 
 .subhead {
   font-size: 1.25rem;
