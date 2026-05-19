@@ -248,3 +248,34 @@ footer a {color: var(--green);}
   section {padding: 60px 0;}
 }
 
+.dashboard-mock {
+  width: 100%;
+  max-width: 900px;
+  margin: 60px auto 0 auto;
+  background: #171717;
+  border: 1px solid #262626;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 25px 50px -12px rgba(0,0,0,0.5);
+}
+.mock-header {
+  background: #262626;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  color: #A1A1AA;
+}
+.dot {width: 12px; height: 12px; border-radius: 50%;}
+.red {background: #ef4444;} .yellow {background: #eab308;} .green {background: #22c55e;}
+.mock-table {padding: 20px;}
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 16px 0;
+  border-bottom: 1px solid #262626;
+}
+.row.head {font-weight: 700; color: #A1A1AA;}
+.status {color: #22c55e; font-weight: 600;}
+.status.interview {color: #3b82f6;}
